@@ -1,10 +1,11 @@
-import { ButtonProps } from './../../node_modules/primeng/splitbutton/splitbutton.interface.d';
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-import { ButtonModule } from 'primeng/button';
-
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule,
+    SharedModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     provideClientHydration()
