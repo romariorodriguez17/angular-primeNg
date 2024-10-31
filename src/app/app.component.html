@@ -1,12 +1,9 @@
 <router-outlet> </router-outlet>
-<button pButton type="button" label="Click" title="prueba"></button>
+<div>
+  <button pButton> Hola </button>
 
-<p-button label="Submit" />
+  <p-button [ngStyle]="{'margin': '10px'}" label="Submit" icon="pi pi-check" iconPos="right"></p-button>
 
-<p-button label="Primary" [text]="true" [raised]="true" />
+  <p-button label="Search" icon="pi pi-check" [loading]="loading" (onClick)="load()" [ngStyle]="{'margin': '10px'}" />
 
-<p-button label="Primary" [text]="true" />
-
-<p-button label="Primary" [rounded]="true" />
-
-<p-button label="Primary" [raised]="true" />
+</div>
