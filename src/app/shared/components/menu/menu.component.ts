@@ -10,32 +10,73 @@ export class MenuComponent {
   public menuItems: MenuItem[] = [];
 
   ngOnInit() {
+    // this.menuItems = [
+    //   { label: 'New', icon: 'pi pi-plus' },
+    //   { label: 'Search', icon: 'pi pi-search' },
+    //   {
+    //     label: 'Documents',
+    //     items: [
+    //       {
+    //         label: 'New',
+    //         icon: 'pi pi-plus'
+    //       },
+    //       {
+    //         label: 'Search',
+    //         icon: 'pi pi-search'
+    //       }
+    //     ]
+    //   },
+    //   {
+    //     label: 'Profile',
+    //     items: [
+    //       {
+    //         label: 'Settings',
+    //         icon: 'pi pi-cog'
+    //       },
+    //       {
+    //         label: 'Salir',
+    //         icon: 'pi pi-sign-out'
+    //       }
+    //     ]
+    //   }
+    // ];
     this.menuItems = [
-      { label: 'New', icon: 'pi pi-plus' },
-      { label: 'Search', icon: 'pi pi-search' },
       {
-        label: 'Documents',
+        label: 'Pipes en Angular',
+        icon: 'pi pi-desktop',
         items: [
           {
-            label: 'New',
-            icon: 'pi pi-plus'
+            label: 'Textos y Fechas',
+            icon: 'pi pi-align-left',
+            routerLink: '/'
           },
           {
-            label: 'Search',
-            icon: 'pi pi-search'
+            label: 'Números',
+            icon: 'pi pi-dollar',
+            routerLink: '/numbers'
+          },
+          {
+            label: 'No comunes',
+            icon: 'pi pi-globe',
+            routerLink: '/uncommon'
           }
+
         ]
       },
       {
-        label: 'Profile',
+        label: 'Pipes personalizados',
+        icon: 'pi pi-cog',
         items: [
           {
-            label: 'Settings',
-            icon: 'pi pi-cog'
+            label: 'Mayúsculas',
+            icon: 'pi pi-sort-alpha-up',
           },
           {
-            label: 'Logout',
-            icon: 'pi pi-sign-out'
+            label: 'Minúsculas',
+            icon: 'pi pi-sort-alpha-down',
+          },
+          {
+            label: 'Contraseña',
           }
         ]
       }
