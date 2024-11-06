@@ -68,16 +68,11 @@ export class MenuComponent {
         icon: 'pi pi-cog',
         items: [
           {
-            label: 'Mayúsculas',
-            icon: 'pi pi-sort-alpha-up',
-          },
-          {
-            label: 'Minúsculas',
-            icon: 'pi pi-sort-alpha-down',
-          },
-          {
-            label: 'Contraseña',
+            label: 'Custom Pipes',
+            icon: 'pi pi-cog',
+            routerLink: '/custom'
           }
+
         ]
       }
     ];
