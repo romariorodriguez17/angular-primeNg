@@ -10,6 +10,8 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
 
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 import { CanFlyPipe } from './pipes/canfly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { CanFlyPipe } from './pipes/canfly.pipe';
     OrderComponent,
     ToggleCasePipe,
     CanFlyPipe,
+    SortByPipe,
 
   ],
   imports: [
